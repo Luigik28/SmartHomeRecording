@@ -2,7 +2,7 @@ package luigik.smarthomerecording.androidAudioRecorder;
 
 import com.cleveroad.audiovisualization.DbmHandler;
 
-public class VisualizerHandler extends DbmHandler<Float> {
+class VisualizerHandler extends DbmHandler<Float> {
 
     @Override
     protected void onDataReceivedImpl(Float amplitude, int layersCount, float[] dBmArray, float[] ampsArray) {
@@ -19,13 +19,17 @@ public class VisualizerHandler extends DbmHandler<Float> {
         try {
             dBmArray[0] = amplitude;
             ampsArray[0] = amplitude;
-        } catch (Exception e){ }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
-    public void stop() {
+    void stop() {
         try {
             calmDownAndStopRendering();
-        } catch (Exception e){ }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }

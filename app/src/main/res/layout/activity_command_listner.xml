@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="luigik.smarthomerecording.androidAudioRecorder.CommandListenerActivity"
+    android:id="@+id/contentLayout">
+
+    <ImageButton
+        android:id="@+id/buttonMic"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/aar_ic_rec"
+        android:onClick="listen"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_marginBottom="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/aar_listening" />
+
+    <ImageButton
+        android:id="@+id/buttonStop"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/aar_ic_stop"
+        android:onClick="stop"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_marginBottom="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/stop_listening" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        style="?android:attr/progressBarStyle"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+</RelativeLayout>

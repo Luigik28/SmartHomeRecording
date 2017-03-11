@@ -5,4 +5,5 @@
     <string name="aar_listening">Listening</string>
     <string name="aar_playing">Playing</string>
     <string name="start_time">00:00:00</string>
+    <string name="stop_listening">Fine ascolto</string>
 </resources>
