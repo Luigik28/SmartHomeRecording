@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SmartHomeRecording</string>
+    <string name="aar_save">Save</string>
+    <string name="aar_paused">Paused</string>
+    <string name="aar_listening">Listening</string>
+    <string name="aar_playing">Playing</string>
+    <string name="start_time">00:00:00</string>
+</resources>
