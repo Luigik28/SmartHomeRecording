@@ -3,12 +3,66 @@
 
     <item
         is-multidex="true"
+        jar="/home/luigik/.android/build-cache/bfc15024190224b291bacb59fca549535b1fdb7e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="/home/luigik/AndroidStudioProjects/SmartHomeRecording/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_694913bcbeaa90dce8880048c4d77f8917a6c33f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/luigik/.android/build-cache/798f2fb55b33cf9d0dab0b1cdf0820a6953b44d7/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/luigik/AndroidStudioProjects/SmartHomeRecording/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8ef2c9da13230a63f515aea024d5a67b721ea718/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/luigik/.android/build-cache/e81c7968a8cdcedfacca04239e6a69bf4bbd9324/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="/home/luigik/AndroidStudioProjects/SmartHomeRecording/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_74a6cc5eba3447a46c419f38533c7869253fdcbe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/luigik/.android/build-cache/ff9042af72345736b1bf6975cdbb9008ec966540/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="/home/luigik/AndroidStudioProjects/SmartHomeRecording/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e3d62aba3141d3ba839ad1118980978ad6dad1e1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/luigik/AndroidStudioProjects/SmartHomeRecording/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="d4afbb1b8ea9bc227e5b2617626332398db989bb">
+        sha1="a85cb11e998dc8ee6e74484b5c49362f41dd2ca2">
         <dex dex="/home/luigik/AndroidStudioProjects/SmartHomeRecording/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_926ce41407cd37b104b51ca6ff7a46b094b1a271/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/luigik/.android/build-cache/0c9adf5c92de45b8c866571dd3f03638f88408b5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="/home/luigik/AndroidStudioProjects/SmartHomeRecording/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e4420275327dc0aef668aec8dba99f2695596717/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/luigik/.android/build-cache/2c739587428a0817d835f93ff42c2d83833fa281/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="/home/luigik/AndroidStudioProjects/SmartHomeRecording/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_723aa16e50d143c83579a8e745ba6d426b9cc360/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -18,6 +72,33 @@
         revision="25.0.2"
         sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
         <dex dex="/home/luigik/AndroidStudioProjects/SmartHomeRecording/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_68cdd57b72002934c070475372a070c7b7e3ce0c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/luigik/.android/build-cache/c899d4de1ef5168de11325b921e42ba479ea7ffc/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="/home/luigik/AndroidStudioProjects/SmartHomeRecording/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_479ed133cd0ee3bb2ef3d8e5de882d402b33b9ba/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/luigik/.android/build-cache/eb71307e2b8c01888884102af3a62b9de7e5c6df/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="/home/luigik/AndroidStudioProjects/SmartHomeRecording/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ad2c8a0e21176eefc72a095586aa1c52c4a77cc9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/luigik/.android/build-cache/18e6256e459e257e5e84814f5482fa149ac339f9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="/home/luigik/AndroidStudioProjects/SmartHomeRecording/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e213b61bb8ed4541b97506a8915c92505c7e5ce2/classes.dex" />
     </item>
 
 </items>

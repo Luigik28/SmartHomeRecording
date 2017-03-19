@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SmartHomeRecording.iml" filepath="$PROJECT_DIR$/SmartHomeRecording.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mediarecorderwave/mediarecorderwave.iml" filepath="$PROJECT_DIR$/mediarecorderwave/mediarecorderwave.iml" />
     </modules>
   </component>
 </project>

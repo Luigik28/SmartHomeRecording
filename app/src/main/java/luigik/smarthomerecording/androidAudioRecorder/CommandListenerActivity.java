@@ -15,27 +15,23 @@ import android.widget.RelativeLayout;
 import com.cleveroad.audiovisualization.GLAudioVisualizationView;
 
 import java.io.IOException;
-import java.util.Timer;
-import java.util.TimerTask;
 
+import luigik.mediarecorderwave.Util;
+import luigik.mediarecorderwave.Waves;
 import luigik.smarthomerecording.Client.Server;
 import luigik.smarthomerecording.R;
 
 public class CommandListenerActivity extends AppCompatActivity {
 
+    private static final String EXTRA_COLOR = "color";
     private static String filePath;
     private int color;
-
     private MediaRecorder recorder;
-
-    private static final String EXTRA_COLOR = "color";
-
-    private GLAudioVisualizationView visualizerView = null;
-    private VisualizerHandler visualizerHandler = null;
     private ImageButton buttonMic = null;
     private ImageButton buttonStop = null;
     private ProgressBar progressBar = null;
-    private Timer timer;
+
+    private Waves waves = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,7 +68,7 @@ public class CommandListenerActivity extends AppCompatActivity {
             buttonStop.setColorFilter(Color.BLACK);
         }
 
-        visualizerView = new GLAudioVisualizationView.Builder(this)
+        waves = new Waves(new Waves.Builder(this)
                 .setLayersCount(1)
                 .setWavesCount(6)
                 .setWavesHeight(R.dimen.aar_wave_height)
@@ -82,19 +78,16 @@ public class CommandListenerActivity extends AppCompatActivity {
                 .setBubblesRandomizeSize(true)
                 .setBackgroundColor(Util.getDarkerColor(color))
                 .setLayerColors(new int[]{color})
-                .build();
+                .build());
 
-        contentLayout.addView(visualizerView, 0);
-
-        timer = new Timer();
-
+        contentLayout.addView(waves.getVisualizationView(), 0);
     }
 
     @Override
     public void onResume() {
         super.onResume();
         try {
-            visualizerView.onResume();
+            ((GLAudioVisualizationView) waves.getVisualizationView()).onResume();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -103,7 +96,7 @@ public class CommandListenerActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         try {
-            visualizerView.onPause();
+            ((GLAudioVisualizationView) waves.getVisualizationView()).onPause();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -114,7 +107,7 @@ public class CommandListenerActivity extends AppCompatActivity {
     protected void onDestroy() {
         setResult(RESULT_CANCELED);
         try {
-            visualizerView.release();
+            ((GLAudioVisualizationView) waves.getVisualizationView()).release();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -140,33 +133,19 @@ public class CommandListenerActivity extends AppCompatActivity {
         try {
             recorder.prepare();
             recorder.start();
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
-        visualizerHandler = new VisualizerHandler();
-        visualizerView.linkTo(visualizerHandler);
-        timer.scheduleAtFixedRate(new TimerTask() {
-            @Override
-            public void run() {
-                visualizerHandler.onDataReceived((float) recorder.getMaxAmplitude());
-            }
-        }, 0, 250);
+
+        waves.start(recorder, 150);
     }
 
     public void stop(View view) {
         buttonStop.setVisibility(View.INVISIBLE);
         buttonStop.setClickable(false);
-        if (timer != null) {
-            timer.cancel();
-            timer.purge();
-            timer = null;
-        }
+        waves.stop();
         recorder.stop();
         recorder.release();
-        visualizerView.release();
-        if (visualizerHandler != null) {
-            visualizerHandler.stop();
-        }
         progressBar.setVisibility(View.VISIBLE);
         new AsyncSend().execute();
     }
